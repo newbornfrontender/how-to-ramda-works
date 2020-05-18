@@ -4,7 +4,7 @@
   "description": "This project was created to understand how Ramda works",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write **/*.{json,md}"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/newbornfrontender/how-to-ramda-works/issues"
   },
-  "homepage": "https://github.com/newbornfrontender/how-to-ramda-works#readme"
+  "homepage": "https://github.com/newbornfrontender/how-to-ramda-works#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
 }
