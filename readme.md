@@ -7,9 +7,9 @@ Additional goals:
 1. Get to know functional programming
 2. Learn to write tests
 
-## Environment
+## ToDo
 
-Add and configure:
+Environment:
 
 - [ ] Babel
 - [x] ESLint
