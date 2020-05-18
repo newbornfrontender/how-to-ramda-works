@@ -1,0 +1,19 @@
+{
+  "name": "how-to-ramda-works",
+  "version": "1.0.0",
+  "description": "This project was created to understand how Ramda works",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newbornfrontender/how-to-ramda-works.git"
+  },
+  "author": "Sergey Mirasov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newbornfrontender/how-to-ramda-works/issues"
+  },
+  "homepage": "https://github.com/newbornfrontender/how-to-ramda-works#readme"
+}
