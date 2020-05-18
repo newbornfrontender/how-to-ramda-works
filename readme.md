@@ -12,10 +12,10 @@ Additional goals:
 Add and configure:
 
 - [ ] Babel
-- [ ] ESLint
-- [ ] Prettier
+- [x] ESLint
+- [x] Prettier
 - [ ] Jest
-- [ ] Commitlint
+- [x] Commitlint
 
 Documentation:
 
@@ -24,8 +24,14 @@ Documentation:
 
 ## Scripts
 
+> Use [PNPM](https://github.com/pnpm/pnpm)
+
+To install deps run `pnpm install` in console
+
+Scripts run with `pnpm run <script name>`
+
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | ...  | ...         |
 
 ## Ramda methods list
