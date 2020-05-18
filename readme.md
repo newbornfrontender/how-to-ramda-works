@@ -11,10 +11,10 @@ Additional goals:
 
 Environment:
 
-- [ ] Babel
+- [x] Babel
 - [x] ESLint
 - [x] Prettier
-- [ ] Jest
+- [x] Jest
 - [x] Commitlint
 
 Documentation:

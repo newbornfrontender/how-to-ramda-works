@@ -6,7 +6,8 @@
   "scripts": {
     "format": "prettier --write **/*.{json,md}",
     "lint:check": "eslint --print-config src/index.js | eslint-config-prettier-check",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,17 @@
   },
   "homepage": "https://github.com/newbornfrontender/how-to-ramda-works#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "babel-jest": "^26.0.1",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "^23.13.1",
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5"
   },
   "prettier": {
@@ -34,18 +39,40 @@
     "arrowParens": "always",
     "endOfLine": "lf"
   },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  },
   "eslintConfig": {
     "parserOptions": {
       "sourceType": "module"
     },
     "env": {
-      "es2020": true
+      "es2020": true,
+      "jest": true
     },
     "extends": [
       "eslint:recommended",
       "plugin:jest/recommended",
       "plugin:prettier/recommended"
     ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   },
   "commitlint": {
     "extends": [
