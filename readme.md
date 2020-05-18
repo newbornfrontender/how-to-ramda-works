@@ -17,6 +17,15 @@ Add and configure:
 - [ ] Jest
 - [ ] Commitlint
 
+Documentation:
+
+- [ ] Complete scripts section
+
+## Scripts
+
+| Name | Description |
+|------|-------------|
+
 ## Ramda methods list
 
 > Missing methods will be added later
