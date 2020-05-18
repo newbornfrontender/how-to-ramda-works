@@ -19,12 +19,14 @@ Add and configure:
 
 Documentation:
 
+- [ ] Add all Ramda methods
 - [ ] Complete scripts section
 
 ## Scripts
 
 | Name | Description |
 |------|-------------|
+| ...  | ...         |
 
 ## Ramda methods list
 
