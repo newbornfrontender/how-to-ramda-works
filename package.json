@@ -4,7 +4,9 @@
   "description": "This project was created to understand how Ramda works",
   "main": "src/index.js",
   "scripts": {
-    "format": "prettier --write **/*.{json,md}"
+    "format": "prettier --write **/*.{json,md}",
+    "lint:check": "eslint --print-config src/index.js | eslint-config-prettier-check",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,10 @@
   },
   "homepage": "https://github.com/newbornfrontender/how-to-ramda-works#readme",
   "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-prettier": "^3.1.3",
     "prettier": "^2.0.5"
   },
   "prettier": {
@@ -24,5 +30,18 @@
     "trailingComma": "all",
     "arrowParens": "always",
     "endOfLine": "lf"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "env": {
+      "es2020": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended",
+      "plugin:prettier/recommended"
+    ]
   }
 }
