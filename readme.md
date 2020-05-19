@@ -38,7 +38,7 @@ Scripts run with `pnpm run <script name>`
 
 > Missing methods will be added later
 
-- [ ] add
+- [x] add
 - [ ] addIndex
 - [ ] adjust
 - [ ] all
