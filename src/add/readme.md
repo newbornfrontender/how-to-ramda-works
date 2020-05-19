@@ -9,7 +9,7 @@ Adds two values
   add(a: number): (b: number) => number;
 ```
 
-## Example
+## Examples
 
 ```js
 add(2, 4); // => 6
