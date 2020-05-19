@@ -8,6 +8,7 @@ devDependencies:
   eslint-config-prettier: 6.11.0_eslint@7.0.0
   eslint-plugin-jest: 23.13.1_eslint@7.0.0+typescript@3.9.2
   eslint-plugin-prettier: 3.1.3_eslint@7.0.0+prettier@2.0.5
+  fast-check: 1.24.2
   husky: 4.2.5
   jest: 26.0.1
   prettier: 2.0.5
@@ -2056,6 +2057,15 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-lpGEQOMEGnpBT4xS48V06zw+HgU=
+  /fast-check/1.24.2:
+    dependencies:
+      pure-rand: 2.0.0
+      tslib: 1.13.0
+    dev: true
+    engines:
+      node: '>=0.12'
+    resolution:
+      integrity: sha512-ZL48cyZZLJnVsUj127Zi1mfFLM98yzw0LlSSH8CMeVmpL5RCfSRcZSZZ0kJWrRK4eOgNFnXXKNDbzuRb3Vsdhg==
   /fast-deep-equal/3.1.1:
     dev: true
     resolution:
@@ -4112,6 +4122,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /pure-rand/2.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-mk98aayyd00xbfHgE3uEmAUGzz3jCdm8Mkf5DUXUhc7egmOaGG2D7qhVlynGenNe9VaNJZvzO9hkc8myuTkDgw==
   /q/1.5.1:
     dev: true
     engines:
@@ -5391,6 +5405,7 @@ specifiers:
   eslint-config-prettier: ^6.11.0
   eslint-plugin-jest: ^23.13.1
   eslint-plugin-prettier: ^3.1.3
+  fast-check: ^1.24.2
   husky: ^4.2.5
   jest: ^26.0.1
   prettier: ^2.0.5
