@@ -21,7 +21,7 @@ Environment:
 Documentation:
 
 - [ ] Add all Ramda methods
-- [ ] Complete scripts section
+- [x] Complete scripts section
 
 ## Scripts
 
@@ -31,9 +31,13 @@ To install deps run `pnpm install` in console
 
 Scripts run with `pnpm run <script name>`
 
-| Name | Description |
-| ---- | ----------- |
-| ...  | ...         |
+| Name       | Description                     |
+| ---------- | ------------------------------- |
+| format     | format code syntax              |
+| lint       | check code and fix errors       |
+| lint:check | check eslint config             |
+| test       | run tests once                  |
+| test:watch | run tests and watch for changes |
 
 ## Ramda methods list
 

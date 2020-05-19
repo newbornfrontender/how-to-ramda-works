@@ -5,9 +5,10 @@
   "main": "src/index.ts",
   "scripts": {
     "format": "prettier --write **/*.{json,md}",
+    "lint": "eslint --fix --ext ts .",
     "lint:check": "eslint --print-config src/index.ts | eslint-config-prettier-check",
-    "lint:fix": "eslint --fix --ext ts .",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
