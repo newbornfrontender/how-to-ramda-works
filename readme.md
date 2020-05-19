@@ -16,6 +16,7 @@ Environment:
 - [x] Prettier
 - [x] Jest
 - [x] Commitlint
+- [ ] TypeScript
 
 Documentation:
 
